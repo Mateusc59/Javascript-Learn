@@ -15,13 +15,19 @@ h1 {
     font-style: italic;
 }
 
-/* 
+/*
 3. Style the button according to the provided design
 text color - #016f32
 width      - 150px
 background - goldenrod
  */
- 
-button {
 
+button {
+color: #016f32;
+font-weight: bold;
+width: 150px ;
+height: 30px;
+background: goldenrod;
+border: none;
+border-radius: 1px
 }
