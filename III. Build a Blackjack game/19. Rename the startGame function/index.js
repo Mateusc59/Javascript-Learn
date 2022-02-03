@@ -8,24 +8,29 @@ let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 
+// Create a new function called startGame() that calls renderGame()
 function startGame() {
-    cardsEl.textContent = "Cards: " + firstCard + " " + secondCard
-    sumEl.textContent = "Sum: " + sum
-    if (sum <= 20) {
-        message = "Do you want to draw a new card?"
-    } else if (sum === 21) {
-        message = "You've got Blackjack!"
-        hasBlackJack = true
-    } else {
-        message = "You're out of the game!"
-        isAlive = false
-    }
-    messageEl.textContent = message
+  renderGame()
+}
+
+function renderGame() {
+  cardsEl.textContent = "Cards: " + firstCard + " " + secondCard
+  sumEl.textContent = "Sum: " + sum
+  if (sum <= 20) {
+    message = "Do you want to draw a new card?"
+  } else if (sum === 21) {
+    message = "You've got Blackjack!"
+    hasBlackJack = true
+  } else {
+    message = "You're out of the game!"
+    isAlive = false
+  }
+  messageEl.textContent = message
 }
 
 
 function newCard() {
-    let card = 6
-    sum += card
-    startGame()
+  let card = 6
+  sum += card
+  renderGame()
 }
