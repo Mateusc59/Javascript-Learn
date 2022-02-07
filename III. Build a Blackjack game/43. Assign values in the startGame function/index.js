@@ -22,9 +22,16 @@ function getRandomCard() {
     }
 }
 
-function startGame() {
+  function startGame() {
+    isAlive = true
     // Generate two random numbes
+    let firstCard = getRandomCard()
+    let seconCard = getRandomCard()
+    cards = [firstCard + seconCard]
     // Re-assign the cards and sum variables so that the game can start
+    sum = firstCard + seconCard
+    renderGame()
+  }
     renderGame()
 }
 
@@ -33,7 +40,7 @@ function renderGame() {
     for (let i = 0; i < cards.length; i++) {
         cardsEl.textContent += cards[i] + " "
     }
-    
+
     sumEl.textContent = "Sum: " + sum
     if (sum <= 20) {
         message = "Do you want to draw a new card?"
