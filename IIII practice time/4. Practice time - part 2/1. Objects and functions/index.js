@@ -7,3 +7,15 @@
 
 // Call the logData() function to verify that it works
 //ready
+
+let person = {
+  name: "Mathieu",
+  age: 32,
+  country: "France",
+}
+
+function logData() {
+  console.log(person.name + " is " + person.age + " years old and lives in " + person.country)
+}
+
+logData()
