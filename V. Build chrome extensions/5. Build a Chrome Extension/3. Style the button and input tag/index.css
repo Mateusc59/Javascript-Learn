@@ -11,12 +11,24 @@ Style our app according to the provided design!
 green color -> #5f9341
 
 */
-
-
 input {
-    
-}
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    height: 35px;
+    background-color: white;
+    border-color: #5f9341;
+    border-style:solid;
+    border-width: 1px;
+
+    }
 
 button {
-    
+    width: 140px;
+    height: 40px;
+    background-color:#5f9341;
+    color: white;
+    border: none;
+    margin-top: 5px;
 }
