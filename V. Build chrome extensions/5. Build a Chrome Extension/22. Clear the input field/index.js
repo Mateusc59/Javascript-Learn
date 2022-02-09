@@ -6,6 +6,8 @@ const ulEl = document.getElementById("ul-el")
 inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value)
     // Clear out the input field
+    inputEl.value = ""
+
     renderLeads()
 })
 
@@ -14,5 +16,5 @@ function renderLeads() {
     for (let i = 0; i < myLeads.length; i++) {
         listItems += "<li>" + myLeads[i] + "</li>"
     }
-    ulEl.innerHTML = listItems  
+    ulEl.innerHTML = listItems
 }
