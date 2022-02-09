@@ -7,3 +7,8 @@ function saveLead() {
 
 
 
+let saveInput = document.getElementById("input-btn")
+
+saveInput.addEventListener("click", function () {
+  console.log("Button clicked!")
+})
