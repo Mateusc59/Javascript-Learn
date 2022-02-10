@@ -27,7 +27,7 @@ function getRandomCard() {
     // Generate two random numbes
     let firstCard = getRandomCard()
     let seconCard = getRandomCard()
-    cards = [firstCard + seconCard]
+    cards = [firstCard, seconCard]
     // Re-assign the cards and sum variables so that the game can start
     sum = firstCard + seconCard
     renderGame()
