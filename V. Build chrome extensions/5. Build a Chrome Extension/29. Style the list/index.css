@@ -23,13 +23,15 @@ button {
 
 /* STYLE THE LIST ACCORDING TO THE DESIGN */
 ul {
-    
+list-style-type: none;
+
 }
 
 li {
-    
+    margin-left: -40px;
 }
 
 a {
-
+color: #5f9341;
+text-decoration-color: #5f9341;
 }

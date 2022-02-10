@@ -2,11 +2,16 @@ let myLeads = []
 const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn")
 const ulEl = document.getElementById("ul-el")
-
 // 1. Save a key-value pair in localStorage
+localStorage.setItem("myProfile", "linkedin.com/in/mathieu-hollande/")
 // 2. Refresh the page. Get the value and log it to the console
-// 3. Clear localStorage
+localStorage.getItem("myProfile")
 
+console.log(localStorage.getItem("myProfile"))
+// 3. Clear localStorage
+localStorage.clear()
+
+console.log(localStorage.getItem("myProfile"))
 // HINTS:
 // localStorage.setItem(key, value)
 // localStorage.getItem(key)
@@ -31,5 +36,5 @@ function renderLeads() {
             </li>
         `
     }
-    ulEl.innerHTML = listItems  
+    ulEl.innerHTML = listItems
 }
