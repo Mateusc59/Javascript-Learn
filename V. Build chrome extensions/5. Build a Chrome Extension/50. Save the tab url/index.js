@@ -15,11 +15,15 @@ const tabs = [
     {url: "https://www.linkedin.com/in/per-harald-borgen/"}
 ]
 
-tabBtn.addEventListener("click", function(){
-    // Save the url instead of logging it out
-    console.log(tabs[0].url)
-})
+tabBtn.addEventListener("click", function () {
+  // Save the url instead of logging it out
+  myLeads.push(tabs[0].url)
+ // tabs[0].url = ""
+  localStorage.setItem("myleads", JSON.stringify(myLeads))
+  render(myLeads)
+  console.log(tabs[0].url)
 
+})
 function render(leads) {
     let listItems = ""
     for (let i = 0; i < leads.length; i++) {
