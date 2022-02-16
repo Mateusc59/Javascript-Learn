@@ -1,0 +1,133 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 19px;
+    left: 62px;
+    top: 59px;
+
+    background: #1F2937;
+}
+
+
+h1 {
+    position: absolute;
+    width: 100%;
+    height: 190px;
+    left: 0px;
+    top: 0px;
+    margin-top: 0px;
+    text-align: center;
+    color: white;
+    background: #3A69D2;
+
+}
+
+h3{
+    position: absolute;
+    width: 100%;
+    height: 31px;
+    top: 38px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    /* or 175% */
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+#btn1 {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    height: 45px;
+    left: 38px;
+    top: 231px;
+    margin-left: 5%;
+    padding: 9px 13px;
+    border: 1px solid #D5D4D8;
+    background: #D1D4F4;
+    border-radius: 7px;
+}
+
+#btn2{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    height: 45px;
+    left: 203.44px;
+    top: 231px;
+    margin-left: 5%;
+    padding: 9px 13px;
+    background: #D1D4F4;
+    border: 1px solid #D5D4D8;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+#btn3 {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    height: 45px;
+    left: 367.83px;
+    top: 231px;
+    margin-left: 5%;
+    padding: 9px 13px;
+    background: #D1D4F4;
+    border: 1px solid #D5D4D8;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+#tsk {
+display: flex;
+justify-content: space-around;
+position: absolute;
+width: 95px;
+height: 22px;
+left: 39px;
+top: 319px;
+
+font-family: Inter;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 20px;
+/* or 167% */
+
+
+color: #D5D4D8;
+}
+
+#ttl {
+position: absolute;
+width: 490px;
+height: 22px;
+left: 39px;
+top: 319px;
+
+font-family: Inter;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 20px;
+text-align: right;
+/* or 167% */
+
+
+color: #D5D4D8;
+}
+
+hr{
+position: absolute;
+width: 90%;
+height: 0px;
+left: 39px;
+top: 391px;
+
+border: 1px solid #C3C6DB;
+}
