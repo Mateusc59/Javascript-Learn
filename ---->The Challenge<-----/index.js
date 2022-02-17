@@ -1,7 +1,7 @@
-let WashBtn = document.getElementById("btn1")
-let MowBtn = document.getElementById("btn2")
-let WeedsBtn = document.getElementById("btn3")
-let SendInvoice = document.getElementById("invcbtn")
+const WashBtn = document.getElementById("btn1")
+const MowBtn = document.getElementById("btn2")
+const WeedsBtn = document.getElementById("btn3")
+const SendInvoice = document.getElementById("invcbtn")
 
 let SumWashCar = document.getElementById("washcardollar")
 let SumMowLawn = document.getElementById("mowlawndollar")
@@ -12,22 +12,22 @@ let WashCar = 10
 let MowLawn = 20
 let PullWeeds = 30
 let sum = 0
-let count = 0
+let total = []
+
 
 
 
 WashBtn.addEventListener("click", function () {
-  c += WashCar
-  TotalAmount.textContent = "$" + sum
+  sum += WashCar
   SumWashCar.textContent = "$" + sum
-
-  console.log(sum)
+  TotalAmount.textContent = "$" + sum
 })
 
 MowBtn.addEventListener("click", function () {
   sum += MowLawn
-  TotalAmount.textContent = "$" + sum
   SumMowLawn.textContent = "$" + sum
+  TotalAmount.textContent = "$" + sum
+
   console.log(sum)
 
 })
@@ -44,5 +44,14 @@ WeedsBtn.addEventListener("click", function () {
 
 
 function save() {
-  let sumDash = sum
+  let globalsum = allTask()
+  sum += globalsum
+  total.push(globalsum)
+  console.log(sum)
+
+}
+
+function allTask() {
+  for (let i = 0; i < total.length; i++)
+    return total[i]
 }
